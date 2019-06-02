@@ -1,0 +1,6 @@
+EXPORTS
+    help
+	hwnd
+    CheckVersion
+    WinDbgExtensionDllInit
+    ExtensionApiVersion
