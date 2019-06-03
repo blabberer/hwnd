@@ -1,0 +1,16 @@
+
+fc modwinternl.h  "c:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\winternl.h"
+
+reduce the size of undocumented array and include CLIENT_ID
+
+Comparing files modwinternl.h and C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.17763.0\UM\WINTERNL.H
+***** modwinternl.h
+    PPEB ProcessEnvironmentBlock;
+        CLIENT_ID ClientId;  <<<<
+    PVOID Reserved2[397];  <<<<
+    BYTE Reserved3[1952];
+***** C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.17763.0\UM\WINTERNL.H
+    PPEB ProcessEnvironmentBlock;
+    PVOID Reserved2[399]; <<<<<<
+    BYTE Reserved3[1952];
+*****
